@@ -1,4 +1,4 @@
-db/
 *.qsf
 *.qws
 *.qpf
+*.bak

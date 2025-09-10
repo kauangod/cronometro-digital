@@ -1,0 +1,858 @@
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+
+// 
+// Device: Altera 10CL025YU256I7G Package UFBGA256
+// 
+
+//
+// This file contains Fast Corner delays for the design using part 10CL025YU256I7G,
+// with speed grade M, core voltage 1.2VmV, and temperature -40 Celsius
+//
+
+// 
+// This SDF file should be used for ModelSim-Altera (VHDL) only
+// 
+
+(DELAYFILE
+  (SDFVERSION "2.1")
+  (DESIGN "cronometro")
+  (DATE "09/10/2025 11:18:34")
+  (VENDOR "Altera")
+  (PROGRAM "Quartus Prime")
+  (VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition")
+  (DIVIDER .)
+  (TIMESCALE 1 ps)
+
+  (CELL
+    (CELLTYPE "cyclone10lp_io_obuf")
+    (INSTANCE \\debounce\[0\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (632:632:632) (723:723:723))
+        (IOPATH i o (1482:1482:1482) (1507:1507:1507))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_io_obuf")
+    (INSTANCE \\debounce\[1\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (523:523:523) (584:584:584))
+        (IOPATH i o (1464:1464:1464) (1464:1464:1464))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_io_obuf")
+    (INSTANCE \\debounce\[2\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (558:558:558) (623:623:623))
+        (IOPATH i o (1494:1494:1494) (1494:1494:1494))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_io_obuf")
+    (INSTANCE \\debounce\[3\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (540:540:540) (601:601:601))
+        (IOPATH i o (1484:1484:1484) (1484:1484:1484))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_io_obuf")
+    (INSTANCE \\debounce\[4\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (740:740:740) (820:820:820))
+        (IOPATH i o (2265:2265:2265) (2348:2348:2348))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_io_obuf")
+    (INSTANCE \\debounce\[5\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (573:573:573) (628:628:628))
+        (IOPATH i o (1474:1474:1474) (1474:1474:1474))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_io_obuf")
+    (INSTANCE \\debounce\[6\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (400:400:400) (449:449:449))
+        (IOPATH i o (1482:1482:1482) (1507:1507:1507))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_io_obuf")
+    (INSTANCE \\debounce\[7\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (549:549:549) (624:624:624))
+        (IOPATH i o (1462:1462:1462) (1487:1487:1487))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_io_obuf")
+    (INSTANCE \\debounce\[8\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (438:438:438) (492:492:492))
+        (IOPATH i o (1464:1464:1464) (1464:1464:1464))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_io_obuf")
+    (INSTANCE \\debounce\[9\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (638:638:638) (716:716:716))
+        (IOPATH i o (1462:1462:1462) (1487:1487:1487))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_io_obuf")
+    (INSTANCE \\debounce\[10\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (240:240:240) (266:266:266))
+        (IOPATH i o (1472:1472:1472) (1497:1497:1497))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_io_obuf")
+    (INSTANCE \\debounce\[11\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (635:635:635) (703:703:703))
+        (IOPATH i o (1474:1474:1474) (1474:1474:1474))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_io_obuf")
+    (INSTANCE \\debounce\[12\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (659:659:659) (739:739:739))
+        (IOPATH i o (1462:1462:1462) (1487:1487:1487))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_io_obuf")
+    (INSTANCE \\debounce\[13\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (688:688:688) (757:757:757))
+        (IOPATH i o (1474:1474:1474) (1474:1474:1474))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_io_obuf")
+    (INSTANCE \\debounce\[14\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (724:724:724) (816:816:816))
+        (IOPATH i o (1462:1462:1462) (1487:1487:1487))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_io_obuf")
+    (INSTANCE \\debounce\[15\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (251:251:251) (279:279:279))
+        (IOPATH i o (1462:1462:1462) (1487:1487:1487))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_io_obuf")
+    (INSTANCE \\debounce\[16\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (411:411:411) (448:448:448))
+        (IOPATH i o (2255:2255:2255) (2338:2338:2338))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_io_obuf")
+    (INSTANCE \\debounce\[17\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (481:481:481) (532:532:532))
+        (IOPATH i o (1462:1462:1462) (1487:1487:1487))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_io_obuf")
+    (INSTANCE \\debounce\[18\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (586:586:586) (660:660:660))
+        (IOPATH i o (1464:1464:1464) (1464:1464:1464))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_io_obuf")
+    (INSTANCE \\debounce\[19\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (405:405:405) (453:453:453))
+        (IOPATH i o (1474:1474:1474) (1474:1474:1474))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_io_obuf")
+    (INSTANCE \\debounce\[20\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (416:416:416) (465:465:465))
+        (IOPATH i o (1451:1451:1451) (1452:1452:1452))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_io_ibuf")
+    (INSTANCE \\button1\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (290:290:290) (661:661:661))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_lcell_comb")
+    (INSTANCE \\Add0\~0\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (111:111:111) (140:140:140))
+        (IOPATH datab combout (182:182:182) (171:171:171))
+        (IOPATH datab cout (213:213:213) (164:164:164))
+        (IOPATH datad combout (65:65:65) (60:60:60))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_lcell_comb")
+    (INSTANCE \\button1_debounce\~60\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (1778:1778:1778) (1993:1993:1993))
+        (PORT datad (86:86:86) (103:103:103))
+        (IOPATH datab combout (158:158:158) (156:156:156))
+        (IOPATH datad combout (65:65:65) (60:60:60))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_lcell_comb")
+    (INSTANCE \\Add0\~2\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1821:1821:1821) (2026:2026:2026))
+        (PORT datab (102:102:102) (133:133:133))
+        (IOPATH dataa combout (149:149:149) (162:162:162))
+        (IOPATH dataa cout (211:211:211) (161:161:161))
+        (IOPATH datab combout (150:150:150) (166:166:166))
+        (IOPATH datab cout (213:213:213) (164:164:164))
+        (IOPATH datad combout (65:65:65) (60:60:60))
+        (IOPATH cin combout (178:178:178) (194:194:194))
+        (IOPATH cin cout (32:32:32) (32:32:32))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_lcell_comb")
+    (INSTANCE \\button1_debounce\~40\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (89:89:89) (114:114:114))
+        (PORT datad (1757:1757:1757) (1964:1964:1964))
+        (IOPATH datac combout (114:114:114) (117:117:117))
+        (IOPATH datad combout (65:65:65) (60:60:60))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_lcell_comb")
+    (INSTANCE \\Add0\~4\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1821:1821:1821) (2026:2026:2026))
+        (PORT datab (102:102:102) (132:132:132))
+        (IOPATH dataa combout (176:176:176) (165:165:165))
+        (IOPATH dataa cout (211:211:211) (161:161:161))
+        (IOPATH datab combout (179:179:179) (167:167:167))
+        (IOPATH datab cout (213:213:213) (164:164:164))
+        (IOPATH datad combout (65:65:65) (60:60:60))
+        (IOPATH cin combout (178:178:178) (194:194:194))
+        (IOPATH cin cout (32:32:32) (32:32:32))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_lcell_comb")
+    (INSTANCE \\button1_debounce\~41\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (1776:1776:1776) (1990:1990:1990))
+        (PORT datad (90:90:90) (110:110:110))
+        (IOPATH datab combout (158:158:158) (156:156:156))
+        (IOPATH datad combout (65:65:65) (60:60:60))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_lcell_comb")
+    (INSTANCE \\Add0\~6\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1821:1821:1821) (2026:2026:2026))
+        (PORT datab (102:102:102) (132:132:132))
+        (IOPATH dataa combout (149:149:149) (162:162:162))
+        (IOPATH dataa cout (211:211:211) (161:161:161))
+        (IOPATH datab combout (150:150:150) (166:166:166))
+        (IOPATH datab cout (213:213:213) (164:164:164))
+        (IOPATH datad combout (65:65:65) (60:60:60))
+        (IOPATH cin combout (178:178:178) (194:194:194))
+        (IOPATH cin cout (32:32:32) (32:32:32))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_lcell_comb")
+    (INSTANCE \\button1_debounce\~42\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (1777:1777:1777) (1992:1992:1992))
+        (PORT datad (91:91:91) (111:111:111))
+        (IOPATH datab combout (158:158:158) (156:156:156))
+        (IOPATH datad combout (65:65:65) (60:60:60))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_lcell_comb")
+    (INSTANCE \\Add0\~8\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (172:172:172) (208:208:208))
+        (PORT datab (1772:1772:1772) (1986:1986:1986))
+        (IOPATH dataa combout (176:176:176) (165:165:165))
+        (IOPATH dataa cout (211:211:211) (161:161:161))
+        (IOPATH datab combout (179:179:179) (167:167:167))
+        (IOPATH datab cout (213:213:213) (164:164:164))
+        (IOPATH datad combout (65:65:65) (60:60:60))
+        (IOPATH cin combout (178:178:178) (194:194:194))
+        (IOPATH cin cout (32:32:32) (32:32:32))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_lcell_comb")
+    (INSTANCE \\button1_debounce\~43\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (1633:1633:1633) (1832:1832:1832))
+        (PORT datad (323:323:323) (371:371:371))
+        (IOPATH datac combout (114:114:114) (117:117:117))
+        (IOPATH datad combout (65:65:65) (60:60:60))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_lcell_comb")
+    (INSTANCE \\Add0\~10\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (102:102:102) (135:135:135))
+        (PORT datab (1772:1772:1772) (1986:1986:1986))
+        (IOPATH dataa combout (149:149:149) (162:162:162))
+        (IOPATH dataa cout (211:211:211) (161:161:161))
+        (IOPATH datab combout (150:150:150) (166:166:166))
+        (IOPATH datab cout (213:213:213) (164:164:164))
+        (IOPATH datad combout (65:65:65) (60:60:60))
+        (IOPATH cin combout (178:178:178) (194:194:194))
+        (IOPATH cin cout (32:32:32) (32:32:32))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_lcell_comb")
+    (INSTANCE \\button1_debounce\~44\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (91:91:91) (116:116:116))
+        (PORT datad (1758:1758:1758) (1964:1964:1964))
+        (IOPATH datac combout (114:114:114) (117:117:117))
+        (IOPATH datad combout (65:65:65) (60:60:60))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_lcell_comb")
+    (INSTANCE \\Add0\~12\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (172:172:172) (208:208:208))
+        (PORT datab (1772:1772:1772) (1985:1985:1985))
+        (IOPATH dataa combout (176:176:176) (165:165:165))
+        (IOPATH dataa cout (211:211:211) (161:161:161))
+        (IOPATH datab combout (179:179:179) (167:167:167))
+        (IOPATH datab cout (213:213:213) (164:164:164))
+        (IOPATH datad combout (65:65:65) (60:60:60))
+        (IOPATH cin combout (178:178:178) (194:194:194))
+        (IOPATH cin cout (32:32:32) (32:32:32))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_lcell_comb")
+    (INSTANCE \\button1_debounce\~45\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (1636:1636:1636) (1835:1835:1835))
+        (PORT datad (323:323:323) (372:372:372))
+        (IOPATH datac combout (114:114:114) (117:117:117))
+        (IOPATH datad combout (65:65:65) (60:60:60))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_lcell_comb")
+    (INSTANCE \\Add0\~14\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (111:111:111) (142:142:142))
+        (PORT datab (1771:1771:1771) (1984:1984:1984))
+        (IOPATH dataa combout (149:149:149) (162:162:162))
+        (IOPATH dataa cout (211:211:211) (161:161:161))
+        (IOPATH datab combout (150:150:150) (166:166:166))
+        (IOPATH datab cout (213:213:213) (164:164:164))
+        (IOPATH datad combout (65:65:65) (60:60:60))
+        (IOPATH cin combout (178:178:178) (194:194:194))
+        (IOPATH cin cout (32:32:32) (32:32:32))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_lcell_comb")
+    (INSTANCE \\button1_debounce\~46\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (1637:1637:1637) (1835:1835:1835))
+        (PORT datad (322:322:322) (366:366:366))
+        (IOPATH datac combout (114:114:114) (117:117:117))
+        (IOPATH datad combout (65:65:65) (60:60:60))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_lcell_comb")
+    (INSTANCE \\Add0\~16\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1821:1821:1821) (2026:2026:2026))
+        (PORT datab (100:100:100) (131:131:131))
+        (IOPATH dataa combout (176:176:176) (165:165:165))
+        (IOPATH dataa cout (211:211:211) (161:161:161))
+        (IOPATH datab combout (179:179:179) (167:167:167))
+        (IOPATH datab cout (213:213:213) (164:164:164))
+        (IOPATH datad combout (65:65:65) (60:60:60))
+        (IOPATH cin combout (178:178:178) (194:194:194))
+        (IOPATH cin cout (32:32:32) (32:32:32))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_lcell_comb")
+    (INSTANCE \\button1_debounce\~47\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (1778:1778:1778) (1993:1993:1993))
+        (PORT datad (93:93:93) (114:114:114))
+        (IOPATH datab combout (158:158:158) (156:156:156))
+        (IOPATH datad combout (65:65:65) (60:60:60))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_lcell_comb")
+    (INSTANCE \\Add0\~18\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (110:110:110) (142:142:142))
+        (PORT datab (1770:1770:1770) (1983:1983:1983))
+        (IOPATH dataa combout (149:149:149) (162:162:162))
+        (IOPATH dataa cout (211:211:211) (161:161:161))
+        (IOPATH datab combout (150:150:150) (166:166:166))
+        (IOPATH datab cout (213:213:213) (164:164:164))
+        (IOPATH datad combout (65:65:65) (60:60:60))
+        (IOPATH cin combout (178:178:178) (194:194:194))
+        (IOPATH cin cout (32:32:32) (32:32:32))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_lcell_comb")
+    (INSTANCE \\button1_debounce\~48\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (365:365:365) (430:430:430))
+        (PORT datac (1635:1635:1635) (1833:1833:1833))
+        (IOPATH dataa combout (159:159:159) (152:152:152))
+        (IOPATH datac combout (114:114:114) (117:117:117))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_lcell_comb")
+    (INSTANCE \\Add0\~20\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1743:1743:1743) (1950:1950:1950))
+        (PORT datab (109:109:109) (138:138:138))
+        (IOPATH dataa combout (176:176:176) (165:165:165))
+        (IOPATH dataa cout (211:211:211) (161:161:161))
+        (IOPATH datab combout (179:179:179) (167:167:167))
+        (IOPATH datab cout (213:213:213) (164:164:164))
+        (IOPATH datad combout (65:65:65) (60:60:60))
+        (IOPATH cin combout (178:178:178) (194:194:194))
+        (IOPATH cin cout (32:32:32) (32:32:32))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_lcell_comb")
+    (INSTANCE \\button1_debounce\~49\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (1644:1644:1644) (1845:1845:1845))
+        (PORT datac (354:354:354) (432:432:432))
+        (IOPATH datab combout (158:158:158) (156:156:156))
+        (IOPATH datac combout (114:114:114) (117:117:117))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_lcell_comb")
+    (INSTANCE \\Add0\~22\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1743:1743:1743) (1949:1949:1949))
+        (PORT datab (100:100:100) (131:131:131))
+        (IOPATH dataa combout (149:149:149) (162:162:162))
+        (IOPATH dataa cout (211:211:211) (161:161:161))
+        (IOPATH datab combout (150:150:150) (166:166:166))
+        (IOPATH datab cout (213:213:213) (164:164:164))
+        (IOPATH datad combout (65:65:65) (60:60:60))
+        (IOPATH cin combout (178:178:178) (194:194:194))
+        (IOPATH cin cout (32:32:32) (32:32:32))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_lcell_comb")
+    (INSTANCE \\button1_debounce\~50\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (1755:1755:1755) (1974:1974:1974))
+        (PORT datad (92:92:92) (112:112:112))
+        (IOPATH datab combout (158:158:158) (156:156:156))
+        (IOPATH datad combout (65:65:65) (60:60:60))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_lcell_comb")
+    (INSTANCE \\Add0\~24\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1743:1743:1743) (1949:1949:1949))
+        (PORT datab (110:110:110) (139:139:139))
+        (IOPATH dataa combout (176:176:176) (165:165:165))
+        (IOPATH dataa cout (211:211:211) (161:161:161))
+        (IOPATH datab combout (179:179:179) (167:167:167))
+        (IOPATH datab cout (213:213:213) (164:164:164))
+        (IOPATH datad combout (65:65:65) (60:60:60))
+        (IOPATH cin combout (178:178:178) (194:194:194))
+        (IOPATH cin cout (32:32:32) (32:32:32))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_lcell_comb")
+    (INSTANCE \\button1_debounce\~51\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (1631:1631:1631) (1826:1826:1826))
+        (PORT datad (359:359:359) (432:432:432))
+        (IOPATH datac combout (114:114:114) (117:117:117))
+        (IOPATH datad combout (65:65:65) (60:60:60))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_lcell_comb")
+    (INSTANCE \\Add0\~26\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (102:102:102) (135:135:135))
+        (PORT datab (1755:1755:1755) (1973:1973:1973))
+        (IOPATH dataa combout (149:149:149) (162:162:162))
+        (IOPATH dataa cout (211:211:211) (161:161:161))
+        (IOPATH datab combout (150:150:150) (166:166:166))
+        (IOPATH datab cout (213:213:213) (164:164:164))
+        (IOPATH datad combout (65:65:65) (60:60:60))
+        (IOPATH cin combout (178:178:178) (194:194:194))
+        (IOPATH cin cout (32:32:32) (32:32:32))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_lcell_comb")
+    (INSTANCE \\button1_debounce\~52\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (1755:1755:1755) (1974:1974:1974))
+        (PORT datad (92:92:92) (112:112:112))
+        (IOPATH datab combout (158:158:158) (156:156:156))
+        (IOPATH datad combout (65:65:65) (60:60:60))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_lcell_comb")
+    (INSTANCE \\Add0\~28\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1742:1742:1742) (1948:1948:1948))
+        (PORT datab (102:102:102) (132:132:132))
+        (IOPATH dataa combout (176:176:176) (165:165:165))
+        (IOPATH dataa cout (211:211:211) (161:161:161))
+        (IOPATH datab combout (179:179:179) (167:167:167))
+        (IOPATH datab cout (213:213:213) (164:164:164))
+        (IOPATH datad combout (65:65:65) (60:60:60))
+        (IOPATH cin combout (178:178:178) (194:194:194))
+        (IOPATH cin cout (32:32:32) (32:32:32))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_lcell_comb")
+    (INSTANCE \\button1_debounce\~53\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (91:91:91) (115:115:115))
+        (PORT datad (1740:1740:1740) (1949:1949:1949))
+        (IOPATH datac combout (114:114:114) (117:117:117))
+        (IOPATH datad combout (65:65:65) (60:60:60))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_lcell_comb")
+    (INSTANCE \\Add0\~30\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (111:111:111) (142:142:142))
+        (PORT datab (1755:1755:1755) (1973:1973:1973))
+        (IOPATH dataa combout (149:149:149) (162:162:162))
+        (IOPATH dataa cout (211:211:211) (161:161:161))
+        (IOPATH datab combout (150:150:150) (166:166:166))
+        (IOPATH datab cout (213:213:213) (164:164:164))
+        (IOPATH datad combout (65:65:65) (60:60:60))
+        (IOPATH cin combout (178:178:178) (194:194:194))
+        (IOPATH cin cout (32:32:32) (32:32:32))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_lcell_comb")
+    (INSTANCE \\button1_debounce\~54\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (1631:1631:1631) (1827:1827:1827))
+        (PORT datad (450:450:450) (523:523:523))
+        (IOPATH datac combout (114:114:114) (117:117:117))
+        (IOPATH datad combout (65:65:65) (60:60:60))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_lcell_comb")
+    (INSTANCE \\Add0\~32\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (102:102:102) (136:136:136))
+        (PORT datab (1755:1755:1755) (1973:1973:1973))
+        (IOPATH dataa combout (176:176:176) (165:165:165))
+        (IOPATH dataa cout (211:211:211) (161:161:161))
+        (IOPATH datab combout (179:179:179) (167:167:167))
+        (IOPATH datab cout (213:213:213) (164:164:164))
+        (IOPATH datad combout (65:65:65) (60:60:60))
+        (IOPATH cin combout (178:178:178) (194:194:194))
+        (IOPATH cin cout (32:32:32) (32:32:32))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_lcell_comb")
+    (INSTANCE \\button1_debounce\~55\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (1755:1755:1755) (1974:1974:1974))
+        (PORT datad (92:92:92) (112:112:112))
+        (IOPATH datab combout (158:158:158) (156:156:156))
+        (IOPATH datad combout (65:65:65) (60:60:60))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_lcell_comb")
+    (INSTANCE \\Add0\~34\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1741:1741:1741) (1947:1947:1947))
+        (PORT datab (110:110:110) (139:139:139))
+        (IOPATH dataa combout (149:149:149) (162:162:162))
+        (IOPATH dataa cout (211:211:211) (161:161:161))
+        (IOPATH datab combout (150:150:150) (166:166:166))
+        (IOPATH datab cout (213:213:213) (164:164:164))
+        (IOPATH datad combout (65:65:65) (60:60:60))
+        (IOPATH cin combout (178:178:178) (194:194:194))
+        (IOPATH cin cout (32:32:32) (32:32:32))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_lcell_comb")
+    (INSTANCE \\button1_debounce\~56\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (1638:1638:1638) (1836:1836:1836))
+        (PORT datad (445:445:445) (521:521:521))
+        (IOPATH datac combout (114:114:114) (117:117:117))
+        (IOPATH datad combout (65:65:65) (60:60:60))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_lcell_comb")
+    (INSTANCE \\Add0\~36\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1741:1741:1741) (1946:1946:1946))
+        (PORT datab (110:110:110) (139:139:139))
+        (IOPATH dataa combout (176:176:176) (165:165:165))
+        (IOPATH dataa cout (211:211:211) (161:161:161))
+        (IOPATH datab combout (179:179:179) (167:167:167))
+        (IOPATH datab cout (213:213:213) (164:164:164))
+        (IOPATH datad combout (65:65:65) (60:60:60))
+        (IOPATH cin combout (178:178:178) (194:194:194))
+        (IOPATH cin cout (32:32:32) (32:32:32))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_lcell_comb")
+    (INSTANCE \\button1_debounce\~57\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (1646:1646:1646) (1849:1849:1849))
+        (PORT datac (347:347:347) (413:413:413))
+        (IOPATH datab combout (158:158:158) (156:156:156))
+        (IOPATH datac combout (114:114:114) (117:117:117))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_lcell_comb")
+    (INSTANCE \\Add0\~38\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1740:1740:1740) (1946:1946:1946))
+        (PORT datab (110:110:110) (139:139:139))
+        (IOPATH dataa combout (149:149:149) (162:162:162))
+        (IOPATH dataa cout (211:211:211) (161:161:161))
+        (IOPATH datab combout (150:150:150) (166:166:166))
+        (IOPATH datab cout (213:213:213) (164:164:164))
+        (IOPATH datad combout (65:65:65) (60:60:60))
+        (IOPATH cin combout (178:178:178) (194:194:194))
+        (IOPATH cin cout (32:32:32) (32:32:32))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_lcell_comb")
+    (INSTANCE \\button1_debounce\~58\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1556:1556:1556) (1731:1731:1731))
+        (PORT datac (419:419:419) (471:471:471))
+        (IOPATH dataa combout (159:159:159) (152:152:152))
+        (IOPATH datac combout (114:114:114) (117:117:117))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_lcell_comb")
+    (INSTANCE \\Add0\~40\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (1755:1755:1755) (1974:1974:1974))
+        (PORT datad (90:90:90) (108:108:108))
+        (IOPATH datab combout (158:158:158) (164:164:164))
+        (IOPATH datad combout (65:65:65) (60:60:60))
+        (IOPATH cin combout (178:178:178) (194:194:194))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cyclone10lp_lcell_comb")
+    (INSTANCE \\button1_debounce\~59\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (1755:1755:1755) (1974:1974:1974))
+        (PORT datad (90:90:90) (109:109:109))
+        (IOPATH datab combout (158:158:158) (156:156:156))
+        (IOPATH datad combout (65:65:65) (60:60:60))
+      )
+    )
+  )
+)
