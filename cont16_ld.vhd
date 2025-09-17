@@ -33,7 +33,7 @@ begin
 			end if;
 		end if;
 	end process;
-	
+
 	q <= std_logic_vector(q_aux);
 	
 end architecture;
