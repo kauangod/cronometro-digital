@@ -16,7 +16,7 @@ begin
 	process(clk)
 	begin
 		if(rising_edge(clk)) then
-			if(input = '1') then
+			if(input = '0') then
 				debounced_s <= debounced_s +1;
 			else
 				debounced_s <= 0;

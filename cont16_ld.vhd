@@ -15,7 +15,7 @@ entity cont16_ld is
 end entity;
 
 architecture a_cont16_ld of cont16_ld is
-	signal q_aux : unsigned(3 downto 0);
+	signal q_aux : unsigned(3 downto 0) := "0000";
 begin
 	process(rst, clk)
 	begin

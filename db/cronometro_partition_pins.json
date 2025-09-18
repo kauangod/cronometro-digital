@@ -2,7 +2,100 @@
 	"partitions" : [
 		{
 			"name" : "Top",
-			"pins" : []
+			"pins" : [
+				{
+					"name" : "sec[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sec[1]",
+					"strict" : false
+				},
+				{
+					"name" : "sec[2]",
+					"strict" : false
+				},
+				{
+					"name" : "sec[3]",
+					"strict" : false
+				},
+				{
+					"name" : "sec[4]",
+					"strict" : false
+				},
+				{
+					"name" : "sec[5]",
+					"strict" : false
+				},
+				{
+					"name" : "sec[6]",
+					"strict" : false
+				},
+				{
+					"name" : "sec[7]",
+					"strict" : false
+				},
+				{
+					"name" : "cent[0]",
+					"strict" : false
+				},
+				{
+					"name" : "cent[1]",
+					"strict" : false
+				},
+				{
+					"name" : "cent[2]",
+					"strict" : false
+				},
+				{
+					"name" : "cent[3]",
+					"strict" : false
+				},
+				{
+					"name" : "cent[4]",
+					"strict" : false
+				},
+				{
+					"name" : "cent[5]",
+					"strict" : false
+				},
+				{
+					"name" : "cent[6]",
+					"strict" : false
+				},
+				{
+					"name" : "cent[7]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "button2",
+					"strict" : false
+				},
+				{
+					"name" : "button1",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tms",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tck",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdi",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdo",
+					"strict" : false
+				}
+			]
 		}
 	]
 }

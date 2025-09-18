@@ -20,6 +20,7 @@ architecture a_cronometro of cronometro is
 			  debounced : out std_logic
 		 );
 	end component;
+	
 	component cont16_ld is
 		port(
 			  rst  : in std_logic;
@@ -28,12 +29,13 @@ architecture a_cronometro of cronometro is
 			  clr  : in std_logic;
 			  ld   : in std_logic;
 			  load : in std_logic_vector(3 downto 0);
-			  q	  : out std_logic_vector(3 downto 0)
+			  q	 : out std_logic_vector(3 downto 0)
 		);
-		
-	signal button1_debounced, button2_debounced, running, reset, reset_b, clk_en0, clk_en1, clk_en2, clk_en3 : std_logic := '0';
-	signal en_cc : integer := 0;
+	end component;
 	
+	signal reset_s, button1_debounced, button2_debounced, running, reset_s0, reset_s1, reset_s2, reset_s3, reset_b, clk_en0, clk_en1, clk_en2, clk_en3 : std_logic := '0';
+	signal en_cc : integer := 0;
+	signal sec_s, cent_s : std_logic_vector(7 downto 0);
 	
 begin
 	b1 : debouncer
@@ -52,46 +54,46 @@ begin
 	
 	cent0 : cont16_ld
 	port map(
-		  rst  => reset_s0;
-		  clk  => clk;
-		  en	  => clk_en0;
-		  clr  => '0';
-		  ld   => '0';
-        load => "0000";
-		  q	  => cent(3 downto 0);
+		  rst  => reset_s0,
+		  clk  => clk,
+		  en	  => clk_en0,
+		  clr  => '0',
+		  ld   => '0',
+        load => "0000",
+		  q	  => cent_s(3 downto 0)
 	);
 	
 	cent1 : cont16_ld
 	port map(
-		  rst  => reset_s1;
-		  clk  => clk;
-		  en	  => clk_en1;
-		  clr  => '0';
-		  ld   => '0';
-        load => "0000";
-		  q	  => cent(7 downto 4);
+		  rst  => reset_s1,
+		  clk  => clk,
+		  en	  => clk_en1,
+		  clr  => '0',
+		  ld   => '0',
+        load => "0000",
+		  q	  => cent_s(7 downto 4)
 	);
 	
 	sec0 : cont16_ld
 	port map(
-		  rst  => reset_s2;
-		  clk  => clk;
-		  en	  => clk_en2;
-		  clr  => '0';
-		  ld   => '0';
-        load => "0000";
-		  q	  => sec(3 downto 0);
+		  rst  => reset_s2,
+		  clk  => clk,
+		  en	  => clk_en2,
+		  clr  => '0',
+		  ld   => '0',
+        load => "0000",
+		  q	  => sec_s(3 downto 0)
 	);
 	
 	sec1 : cont16_ld
 	port map(
-		  rst  => reset_s3;
-		  clk  => clk;
-		  en	  => clk_en3;
-		  clr  => '0';
-		  ld   => '0';
-        load => "0000";
-		  q	  => sec(7 downto 4);
+		  rst  => reset_s3,
+		  clk  => clk,
+		  en	  => clk_en3,
+		  clr  => '0',
+		  ld   => '0',
+        load => "0000",
+		  q	  => sec_s(7 downto 4)
 	);
 	
 	process(button1_debounced)
@@ -101,43 +103,42 @@ begin
 		end if;
 	end process;
 	
-	process(button2_debounced)
-	begin
-		if(rising_edge(button2_debounced) and running = '0') then
-			reset_b <= '1';
-		end if;
-	end process;
+	reset_b <= '1' when button2_debounced = '1' and running = '0' else
+				  '0';
 	
 	process(clk)
 	begin
 		if (rising_edge(clk) and running = '1') then
-			if (end_cc < 500000) then
+			if (en_cc < 500000) then
 				en_cc <= en_cc + 1;
 			else
 				en_cc <= 0;
 			end if;
 		elsif (rising_edge(clk) and reset_b = '1') then
 			en_cc <= 0;
-			reset_b <= '0';
 		end if;
+	end process;
 	
-	clk_en <= '1' when end_cc = 499999
-			 else '0';
-
+	clk_en0 <= '1' when en_cc = 499999 else
+				  '0';
 	
-	clk_en1 <= '1' when cent(3 downto 0) = "1001"
-				else '0';
-	clk_en2 <= '1' when cent(7 downto 4) = "1001"
-				else '0';
-	clk_en3 <= '1' when sec(3 downto 0) = "1001"
-				else '0';
+	clk_en1 <= '1' when cent_s(3 downto 0) = "1001" and clk_en0 = '1' else
+				  '0';
+	clk_en2 <= '1' when cent_s(7 downto 4) = "1001" and clk_en1 = '1' else
+				  '0';
+	clk_en3 <= '1' when sec_s(3 downto 0) = "1001" and clk_en2 = '1' else
+				  '0';
 				
-	reset_s0 <= '1' when cent(3 downto 0) = "1001" or reset_b = '1'
-				else '0';
-	reset_s1 <= '1' when cent(7 downto 4) = "1001" or reset_b = '1'
-				else '0';
-	reset_s2 <= '1' when sec(3 downto 0) = "1001" or reset_b = '1'
-				else '0';
-	reset_s3 <= '1' when sec(7 downto 4) = "0101" or reset_b = '1'
-				else '0';
-	end architecture;
+	reset_s0 <= '1' when cent_s(3 downto 0) = "1010" or reset_b = '1' else
+				   '0';
+	reset_s1 <= '1' when cent_s(7 downto 4) = "1010" or reset_b = '1' else
+				   '0';
+	reset_s2 <= '1' when sec_s(3 downto 0) = "1010" or reset_b = '1' else
+				   '0';
+	reset_s3 <= '1' when sec_s(7 downto 4) = "0110" or reset_b = '1' else
+				   '0';
+					
+	sec <= sec_s;
+	cent <= cent_s;
+	
+end architecture;
